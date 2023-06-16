@@ -17,5 +17,11 @@ public class Product {
 	public void removeProducts(int quantity) {
 		this.quantity -= quantity;
 	}
+	
+	// Sobrepondo o método que vem da classe Object
+	public String toString() {
+		return name + ", $ " + String.format("%.2f", price) + ", " + quantity +
+				" units, Total: $ " + String.format("%.2f", totalValueInStock());
+	}
 
 }
