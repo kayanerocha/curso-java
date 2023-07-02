@@ -35,6 +35,8 @@ public class ProgramEmployee {
 		employee.increaseSalary(sc.nextDouble());
 		
 		System.out.println("\nUpdated data: " + employee);
+		
+		sc.close();
 
 	}
 
