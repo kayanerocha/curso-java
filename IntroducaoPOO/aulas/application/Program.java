@@ -7,7 +7,7 @@ import entities.Triangle;
 
 public class Program {
 	
-	// Aula: Resolvendo um problema sem orientação a objetos
+	// Aula 1: Resolvendo um problema sem orientação a objetos
 	public static void main(String[] args) {
 		
 		Locale.setDefault(Locale.US);
