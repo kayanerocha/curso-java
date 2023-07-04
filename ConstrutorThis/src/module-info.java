@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author kayane
- *
- */
-module ConstrutorThis {
-}
