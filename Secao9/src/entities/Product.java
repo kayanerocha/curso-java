@@ -9,7 +9,7 @@ public class Product {
 	public Product() {
 		
 	}
-	
+
 	public Product(String name, double price, int quantity) {
 		this.name = name;
 		this.price = price;
@@ -20,27 +20,27 @@ public class Product {
 		this.name = name;
 		this.price = price;
 	}
-	
+
 	public String getName() {
-		return this.name;
+		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	public double getPrice() {
-		return this.price;
+		return price;
 	}
-	
+
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	
+
 	public int getQuantity() {
-		return this.quantity;
+		return quantity;
 	}
-	
+
 	public double totalValueInStock() {
 		return price * quantity;
 	}
