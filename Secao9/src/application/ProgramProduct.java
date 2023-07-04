@@ -20,6 +20,11 @@ public class ProgramProduct {
 		
 		Product product = new Product(name, price);
 		
+		product.setName("Computer");
+		System.out.println("Updated name: " + product.getName());
+		product.setPrice(1200.00);
+		System.out.println("Updated price: " + product.getPrice());		
+		
 		System.out.println("\nProduct data: " + product);
 		
 		System.out.print("\nEnter the number of products to be added in stock: ");
