@@ -3,11 +3,9 @@
 
 Repositório criado para as anotaçãoes e exercícios do curso de Java "Java COMPLETO 2023 Programação Orientada a Objetos +Projetos" do professor Nelio Alves.
 
-## Ordem dos Módulos
-
-- [CursoJava](https://github.com/kayanerocha/curso-java/tree/main/CursoJava)
-- [EstruturaSequecial](https://github.com/kayanerocha/curso-java/tree/main/EstruturaSequencial)
-- [EstruturasRepetitivas](https://github.com/kayanerocha/curso-java/tree/main/EstruturasRepetitivas)
-- [TopicosBasicos](https://github.com/kayanerocha/curso-java/tree/main/TopicosBasicos)
-- [IntroducaoPOO](https://github.com/kayanerocha/curso-java/tree/main/IntroducaoPOO)
-
+## Tópicos Abordados
+- [Estrutura sequencial](https://github.com/kayanerocha/curso-java/tree/main/Secao4)
+- Estrutura condicional
+- [Estruturas repetitivas](https://github.com/kayanerocha/curso-java/tree/main/Secao6)
+- [Tópicos básicos](https://github.com/kayanerocha/curso-java/tree/main/Secao7)
+- [Introdução à programação orientada a objetos.](https://github.com/kayanerocha/curso-java/tree/main/Secao8)
