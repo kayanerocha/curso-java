@@ -23,7 +23,8 @@ public class ProgramHeight {
 		double heights[] = new double[n];
 		
 		for (int i=0; i<names.length; i++) {
-			System.out.printf("Dados da %da pessoa:%n", i);
+			System.out.printf("Dados da %da pessoa:%n", i+1);
+			sc.nextLine();
 			System.out.print("Nome: ");
 			names[i] = sc.nextLine();
 			System.out.print("Idade: ");
@@ -33,17 +34,25 @@ public class ProgramHeight {
 		}
 		
 		double media = 0;
-		String namesSixteen[] = new String[n];
-		int agesSixteen[] = new int[n];
+		int contador = 0;
 		for (int i=0; i<names.length; i++) {
 			media += heights[i];
 			
 			if (ages[i] < 16) {
-				namesSixteen[i]
+				contador += 1;
 			}
 		}
-		media = media / ages.length; 
+		media = media / ages.length;
 		
+		System.out.println();
+		System.out.printf("Altura média: %.2f%n", media);
+		System.out.printf("Pessoas com menos de 16 anos: %.1f%% \n", (double) (contador * 100) / names.length);
+		
+		for (int i=0; i<names.length; i++) {
+			if (ages[i] < 16) {
+				System.out.println(names[i]);
+			}
+		}	
 		
 		sc.close();
 
