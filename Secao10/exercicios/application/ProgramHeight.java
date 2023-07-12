@@ -3,6 +3,8 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
+import entities.People;
+
 public class ProgramHeight {
 
 	/*
@@ -15,42 +17,45 @@ public class ProgramHeight {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
+		String name;
+		int age;
+		double height;		
+		
 		System.out.print("Quantas pessoas serao digitadas? ");
 		int n = sc.nextInt();
+		People[] people = new People[n];
 		
-		String names[] = new String[n];
-		int ages[] = new int[n];
-		double heights[] = new double[n];
-		
-		for (int i=0; i<names.length; i++) {
+		for (int i=0; i<people.length; i++) {
 			System.out.printf("Dados da %da pessoa:%n", i+1);
 			sc.nextLine();
 			System.out.print("Nome: ");
-			names[i] = sc.nextLine();
+			name = sc.nextLine();
 			System.out.print("Idade: ");
-			ages[i] = sc.nextInt();
+			age = sc.nextInt();
 			System.out.print("Altura: ");
-			heights[i] = sc.nextDouble();
+			height = sc.nextDouble();
+			
+			people[i] = new People(name, age, height);
 		}
 		
 		double media = 0;
 		int contador = 0;
-		for (int i=0; i<names.length; i++) {
-			media += heights[i];
+		for (int i=0; i<people.length; i++) {
+			media += people[i].getHeight();
 			
-			if (ages[i] < 16) {
+			if (people[i].getAge() < 16) {
 				contador += 1;
 			}
 		}
-		media = media / ages.length;
+		media = media / people.length;
 		
 		System.out.println();
 		System.out.printf("Altura média: %.2f%n", media);
-		System.out.printf("Pessoas com menos de 16 anos: %.1f%% \n", (double) (contador * 100) / names.length);
+		System.out.printf("Pessoas com menos de 16 anos: %.1f%% \n", (double) (contador * 100) / people.length);
 		
-		for (int i=0; i<names.length; i++) {
-			if (ages[i] < 16) {
-				System.out.println(names[i]);
+		for (int i=0; i<people.length; i++) {
+			if (people[i].getAge() < 16) {
+				System.out.println(people[i].getName());
 			}
 		}	
 		
