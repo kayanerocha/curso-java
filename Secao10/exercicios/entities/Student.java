@@ -5,12 +5,19 @@ public class Student {
 	private String name;
 	private double note1;
 	private double note2;
+	private String email;
 	
 	public Student(String name, double note1, double note2) {
 		super();
 		this.name = name;
 		this.note1 = note1;
 		this.note2 = note2;
+	}	
+
+	public Student(String name, String email) {
+		super();
+		this.name = name;
+		this.email = email;
 	}
 
 	public String getName() {
@@ -35,6 +42,14 @@ public class Student {
 
 	public void setNote2(double note2) {
 		this.note2 = note2;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 }
