@@ -8,7 +8,7 @@ import java.util.Scanner;
 import entities.Employee;
 import entities.OutsourcedEmployee;
 
-public class Program {
+public class Exerc1 {
 
 	public static void main(String[] args) {
 		
