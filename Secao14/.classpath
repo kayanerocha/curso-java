@@ -8,5 +8,7 @@
 	<classpathentry kind="src" path="aulas"/>
 	<classpathentry kind="src" path="exerc1"/>
 	<classpathentry kind="src" path="exerc2"/>
+	<classpathentry kind="src" path="exerc3"/>
+	<classpathentry kind="src" path="exerc4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
