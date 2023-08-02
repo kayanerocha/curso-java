@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 import model.entities.Reservation;
-import model.exceptions.DomainException;
+import model.exceptions.WithdrawException;
 
 public class Exerc1 {
 
@@ -45,7 +45,7 @@ public class Exerc1 {
 		catch (ParseException e) {
 			System.out.println("Invalid date format");
 		}
-		catch (DomainException e) { // Captura a exceção caso seja lançada
+		catch (WithdrawException e) { // Captura a exceção caso seja lançada
 			System.out.println("Error in reservation: " + e.getMessage());
 		}
 		catch (RuntimeException e) { // Qualquer exceção que possa ocorrer é uma RuntimeException usando upcasting
