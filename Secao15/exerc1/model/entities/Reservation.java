@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 
-import model.exceptions.DomainException;
+import model.exceptions.WithdrawException;
 
 public class Reservation {
 	
@@ -18,14 +18,14 @@ public class Reservation {
 		
 	}
 
-	public Reservation(Integer number, Date checkIn, Date checkOut) {
+	public Reservation(Integer number, Date checkIn, Date checkOut) throws WithdrawException {
 		Date now = new Date();
 		if (checkIn.before(now) || checkOut.before(now)) {
 			// Lança uma exceção de quando os argumentos são inválidos
-			throw new DomainException("Reservation dates for update must be future dates");
+			throw new WithdrawException("Reservation dates for update must be future dates");
 		}
 		if (!checkOut.after(checkIn)) {
-			throw new DomainException("Check-out date must be after checkin date");
+			throw new WithdrawException("Check-out date must be after checkin date");
 		}
 		this.number = number;
 		this.checkIn = checkIn;
@@ -75,14 +75,14 @@ public class Reservation {
 	}
 	
 	// Propaga a exceção com throws DomainException pois o método não vai tratar ela, mas sim o programa principal
-	public void updateDates(Date checkIn, Date checkOut) throws DomainException {
+	public void updateDates(Date checkIn, Date checkOut) throws WithdrawException {
 		Date now = new Date();
 		if (checkIn.before(now) || checkOut.before(now)) {
 			// Lança uma exceção de quando os argumentos são inválidos
-			throw new DomainException("Reservation dates for update must be future dates");
+			throw new WithdrawException("Reservation dates for update must be future dates");
 		}
 		if (!checkOut.after(checkIn)) {
-			throw new DomainException("Check-out date must be after checkin date");
+			throw new WithdrawException("Check-out date must be after checkin date");
 		}
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
