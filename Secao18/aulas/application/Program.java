@@ -34,6 +34,10 @@ public class Program {
 		System.out.print("Entre com o preço por dia: ");
 		double pricePerDay = sc.nextDouble();
 		
+		/*
+		 * Upcasting: BrazilTaxService -> TaxService
+		 * Injeção de dependência por meio de construtor
+		 */
 		RentalService rentalService = new RentalService(pricePerHour, pricePerDay, new BrazilTaxService());
 		
 		rentalService.processInvoice(cr);
