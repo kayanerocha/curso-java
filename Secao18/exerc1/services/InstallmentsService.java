@@ -1,4 +1,4 @@
-package model.services;
+package services;
 
 import java.time.LocalDate;
 
@@ -17,10 +17,12 @@ public class InstallmentsService {
 		double valueInstallment = contract.getValue() / numberMonths;
 		
 		for(int i=1;i<=numberMonths;i++) {
-			double value = this.paymentService.installment(valueInstallment, i);
-			
+			double interest = this.paymentService.interest(valueInstallment, i);
+			double tax = this.paymentService.tax(valueInstallment + interest);
+			double installment = valueInstallment + interest + tax;
 			LocalDate date = contract.getDate().plusMonths(i);
-			contract.getInstallments().add(new Installment(date, value));
+			
+			contract.getInstallments().add(new Installment(date, installment));
 		}
 	}
 

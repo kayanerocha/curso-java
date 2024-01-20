@@ -45,8 +45,4 @@ public class Contract {
 		return installments;
 	}
 
-	public void setInstallments(ArrayList<Installment> installments) {
-		this.installments = installments;
-	}
-
 }

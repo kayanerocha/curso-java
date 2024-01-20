@@ -1,8 +1,11 @@
 package model.entities;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Installment {
+	
+	private static DateTimeFormatter dtm = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 	
 	private LocalDate date;
 	private double value;
@@ -26,6 +29,11 @@ public class Installment {
 
 	public void setValue(double value) {
 		this.value = value;
+	}
+
+	@Override
+	public String toString() {
+		return date.format(dtm) + " - " + String.format("%.2f", value);
 	}
 
 }

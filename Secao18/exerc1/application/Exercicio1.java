@@ -9,8 +9,8 @@ import java.util.Scanner;
 
 import model.entities.Contract;
 import model.entities.Installment;
-import model.services.InstallmentsService;
-import model.services.PaypalPaymentService;
+import services.InstallmentsService;
+import services.PaypalPaymentService;
 
 public class Exercicio1 {
 
@@ -19,7 +19,6 @@ public class Exercicio1 {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		DateTimeFormatter dtm = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		
 		System.out.println("Entre os dados do contrato:");
@@ -42,7 +41,7 @@ public class Exercicio1 {
 		
 		System.out.println("Parcelas:");
 		for (Installment installment : contract.getInstallments()) {
-			System.out.println(installment.getDate().format(dtm) + " - " + String.format("%.2f", installment.getValue()));
+			System.out.println(installment.toString());
 		}
 		
 		sc.close();
