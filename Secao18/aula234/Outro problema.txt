@@ -1,0 +1,2 @@
+Faça um programa para ler um arquivo contendo funcionários (nome e salário) no formato .csv, armazenando-os em uma lista. Depois, ordenar a lista por
+nome e mostrar o resultado na tela. Nota: o caminho do arquivo pode ser informado "hardcode".
