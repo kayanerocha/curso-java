@@ -16,3 +16,4 @@ Repositório criado para as anotaçãoes e exercícios do curso de Java "Java CO
 - [Herança e polimorfismo](https://github.com/kayanerocha/curso-java/tree/main/Secao14)
 - [Tratamento de exceções](https://github.com/kayanerocha/curso-java/tree/main/Secao15)
 - [Trabalhando com arquivos](https://github.com/kayanerocha/curso-java/tree/main/Secao17)
+- [Interfaces](https://github.com/kayanerocha/curso-java/tree/main/Secao18)
