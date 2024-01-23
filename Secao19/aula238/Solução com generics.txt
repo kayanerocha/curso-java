@@ -1,0 +1,8 @@
+Deseja-se fazer um programa que leia uma quantidade N, e depois N números inteiros. Ao finnal, imprima esses números de forma organizada conforme
+exemplo. Em sequiga, informar qual foi o primeiro valor informado.
+
+Criar um serviço de impressão:
+PrintService<T>
++ addValue(value T): void
++ first(): T
++ print(): void
