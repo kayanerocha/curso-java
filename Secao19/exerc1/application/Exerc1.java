@@ -10,7 +10,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 import entities.Log;
-import entities.User;
+import entities.People;
 
 public class Exerc1 {
 
@@ -31,7 +31,7 @@ public class Exerc1 {
 				String[] fields = line.split(" ");
 				String user = fields[0];
 				Date instant = Date.from(Instant.parse(fields[1]));
-				Log log = new Log(new User(user), instant);
+				Log log = new Log(new People(user), instant);
 				
 				logs.add(log);
 				

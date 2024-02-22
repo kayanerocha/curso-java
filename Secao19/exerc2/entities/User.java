@@ -4,23 +4,23 @@ import java.util.Objects;
 
 public class User {
 	
-	private String name;
+	private int code;
 
-	public User(String name) {
-		this.name = name;
+	public User(int code) {
+		this.code = code;
 	}
 
-	public String getName() {
-		return name;
+	public int getCode() {
+		return code;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setCode(int code) {
+		this.code = code;
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(name);
+		return Objects.hash(code);
 	}
 
 	@Override
@@ -32,7 +32,7 @@ public class User {
 		if (getClass() != obj.getClass())
 			return false;
 		User other = (User) obj;
-		return Objects.equals(name, other.name);
+		return code == other.code;
 	}
 
 }

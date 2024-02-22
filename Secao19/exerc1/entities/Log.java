@@ -5,19 +5,19 @@ import java.util.Objects;
 
 public class Log {
 	
-	private User user;
+	private People user;
 	private Date instant;
 	
-	public Log(User user, Date instant) {
+	public Log(People user, Date instant) {
 		this.user = user;
 		this.instant = instant;
 	}
 
-	public User getUser() {
+	public People getUser() {
 		return user;
 	}
 
-	public void setUser(User user) {
+	public void setUser(People user) {
 		this.user = user;
 	}
 
