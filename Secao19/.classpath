@@ -15,5 +15,6 @@
 	<classpathentry kind="src" path="aula245"/>
 	<classpathentry kind="src" path="exerc1"/>
 	<classpathentry kind="src" path="exerc2"/>
+	<classpathentry kind="src" path="aula248"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
