@@ -9,4 +9,5 @@ Este projeto em Java possui anotações sobre a "Seção 17: Trabalhando com arq
 - Bloco try-with-resources;
 - FileWriter e BufferedWriter;
 - Pastas com File;
-- Caminho de arquivo.
+- Caminho de arquivo;
+- Exercícios.
